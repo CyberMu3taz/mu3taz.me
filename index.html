@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Mu3taz | Cybersecurity Portfolio</title>
+  <meta name="description" content="Cybersecurity portfolio for Mutaz Almehmadi - SOC, Blue Team, Threat Detection, and Incident Response." />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <header class="navbar">
+    <a href="#home" class="logo">mu3taz.me</a>
+    <nav>
+      <a href="#home">Home</a>
+      <a href="#about">About Me</a>
+      <a href="#certifications">Certifications</a>
+      <a href="#projects">Projects</a>
+      <a href="#contact">Contact</a>
+    </nav>
+  </header>
+
+  <main>
+    <section id="home" class="hero section">
+      <div class="hero-content">
+        <p class="tag">Cybersecurity Student • Aspiring SOC Analyst</p>
+        <h1>Mutaz Almehmadi</h1>
+        <h2>Building skills in Blue Team, Threat Detection, and Incident Response.</h2>
+        <p class="hero-text">
+          I am a cybersecurity student focused on defensive security, SOC operations,
+          log analysis, and hands-on security labs.
+        </p>
+        <div class="buttons">
+          <a class="btn primary" href="#projects">View Projects</a>
+          <a class="btn secondary" href="#contact">Contact Me</a>
+        </div>
+      </div>
+
+      <div class="terminal-card">
+        <div class="terminal-top">
+          <span></span><span></span><span></span>
+        </div>
+        <pre><code>$ whoami
+mutaz
+
+$ focus
+SOC Analyst | Blue Team
+
+$ skills
+Linux, Networking, Wireshark,
+Wazuh, SIEM, Incident Response</code></pre>
+      </div>
+    </section>
+
+    <section id="about" class="section">
+      <h2 class="section-title">About Me</h2>
+      <div class="card">
+        <p>
+          I am a cybersecurity student with a strong interest in Security Operations Centers (SOC),
+          defensive security, threat detection, and incident response. I am currently building
+          hands-on experience through home labs, security projects, and professional certifications.
+        </p>
+        <p>
+          My goal is to become a SOC Analyst and continue improving my skills in log analysis,
+          SIEM tools, endpoint monitoring, and real-world incident investigation.
+        </p>
+      </div>
+    </section>
+
+    <section id="certifications" class="section">
+      <h2 class="section-title">Certifications</h2>
+      <div class="grid">
+        <div class="card">
+          <h3>CompTIA Security+</h3>
+          <p>Core cybersecurity concepts, network security, risk management, and security operations.</p>
+          <span class="status completed">Completed</span>
+        </div>
+
+        <div class="card">
+          <h3>CompTIA CySA+</h3>
+          <p>Security analytics, threat detection, vulnerability management, and incident response.</p>
+          <span class="status progress">In Progress</span>
+        </div>
+
+        <div class="card">
+          <h3>TryHackMe / SOC Learning</h3>
+          <p>Hands-on practice in SOC fundamentals, investigation, and defensive security labs.</p>
+          <span class="status progress">Learning</span>
+        </div>
+      </div>
+    </section>
+
+    <section id="projects" class="section">
+      <h2 class="section-title">Projects</h2>
+      <div class="grid">
+        <article class="card project">
+          <h3>SOC Detection Lab</h3>
+          <p>
+            Built a small SOC lab using Windows, Kali Linux, and Wazuh SIEM to collect logs,
+            detect suspicious activity, and analyze security alerts.
+          </p>
+          <ul>
+            <li>Windows endpoint monitoring</li>
+            <li>Wazuh SIEM alerts</li>
+            <li>Failed login detection</li>
+            <li>Basic attack simulation</li>
+          </ul>
+        </article>
+
+        <article class="card project">
+          <h3>Incident Response Project</h3>
+          <p>
+            Created an incident response scenario for ransomware attacks, including detection,
+            containment, eradication, recovery, and lessons learned.
+          </p>
+          <ul>
+            <li>Incident response lifecycle</li>
+            <li>Ransomware analysis</li>
+            <li>Response recommendations</li>
+          </ul>
+        </article>
+
+        <article class="card project">
+          <h3>Disaster Recovery Plan</h3>
+          <p>
+            Designed a disaster recovery plan for a financial institution, focusing on business continuity,
+            recovery strategies, and security governance.
+          </p>
+          <ul>
+            <li>DRP documentation</li>
+            <li>Risk assessment</li>
+            <li>Recovery objectives</li>
+          </ul>
+        </article>
+
+        <article class="card project">
+          <h3>Wireshark Network Analysis</h3>
+          <p>
+            Analyzed network traffic using Wireshark to understand protocols, HTTP responses,
+            ARP behavior, and suspicious network activity.
+          </p>
+          <ul>
+            <li>Packet filtering</li>
+            <li>HTTP analysis</li>
+            <li>ARP investigation</li>
+          </ul>
+        </article>
+      </div>
+    </section>
+
+    <section id="contact" class="section">
+      <h2 class="section-title">Contact</h2>
+      <div class="card contact-card">
+        <p>For professional contact, please use LinkedIn, GitHub, or email.</p>
+        <div class="contact-links">
+          <a href="https://www.linkedin.com/" target="_blank" rel="noopener">LinkedIn</a>
+          <a href="https://github.com/" target="_blank" rel="noopener">GitHub</a>
+          <a href="mailto:contact@mu3taz.me">contact@mu3taz.me</a>
+        </div>
+        <p class="note">No private phone number or full CV is published on this website.</p>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <p>© <span id="year"></span> Mutaz Almehmadi. All rights reserved.</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
