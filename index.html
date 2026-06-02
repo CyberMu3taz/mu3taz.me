@@ -73,8 +73,12 @@ Splunk, ELK, SIEM, Incident Response, Vulnerability Assessment</code></pre>
 
     <div class="cert-card">
       <div class="cert-logo">
-       <img src="images/security-plus.png"
+      <img src="images/security-plus.png"
      alt="CompTIA Security+ Certificate"
+     class="cert-click"
+     role="button"
+     tabindex="0"
+     ontouchstart="openModal(this.src)"
      onclick="openModal(this.src)">
         
       </div>
@@ -88,8 +92,12 @@ Splunk, ELK, SIEM, Incident Response, Vulnerability Assessment</code></pre>
 
     <div class="cert-card">
       <div class="cert-logo">
-     <img src="images/ejpt.png"
+    <img src="images/ejpt.png"
      alt="eJPT Certificate"
+     class="cert-click"
+     role="button"
+     tabindex="0"
+     ontouchstart="openModal(this.src)"
      onclick="openModal(this.src)">
         
       </div>
@@ -180,9 +188,24 @@ Splunk, ELK, SIEM, Incident Response, Vulnerability Assessment</code></pre>
 
   <script src="script.js"></script>
 
-  <div id="certModal" class="modal" onclick="closeModal()">
-    <img id="modalImg" class="modal-content">
-</div>
+<script>
+function openModal(src) {
+  const modal = document.getElementById("certModal");
+  const img = document.getElementById("modalImg");
+
+  img.src = src;
+  modal.style.display = "flex";
+  document.body.style.overflow = "hidden";
+}
+
+function closeModal() {
+  document.getElementById("certModal").style.display = "none";
+  document.body.style.overflow = "auto";
+}
+
+document.getElementById("modalImg").addEventListener("click", function(event) {
+  event.stopPropagation();
+});
 </script>
   
 </body>
