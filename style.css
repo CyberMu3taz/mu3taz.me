@@ -55,11 +55,12 @@ a {
 }
 
 .logo img {
-  width: 30px;
-  height: 30px;
+  width: 90px;
+  height: auto;
   object-fit: contain;
   display: block;
 }
+
 nav {
   display: flex;
   gap: 22px;
