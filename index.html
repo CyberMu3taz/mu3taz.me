@@ -66,14 +66,16 @@ Splunk, ELK, SIEM, Incident Response, Vulnerability Assessment</code></pre>
       </div>
     </section>
 
-   <section id="certifications" class="section">
+  <section id="certifications" class="section">
   <h2 class="section-title">Certifications</h2>
 
   <div class="cert-grid">
 
-    <a class="cert-card" href="images/security-plus.png" target="_blank">
+    <div class="cert-card">
       <div class="cert-logo">
-        <img src="images/security-plus.png" alt="CompTIA Security+ Certificate">
+        <img src="images/security-plus.png"
+             alt="CompTIA Security+ Certificate"
+             onclick="openModal(this.src)">
       </div>
 
       <div class="cert-info">
@@ -81,11 +83,13 @@ Splunk, ELK, SIEM, Incident Response, Vulnerability Assessment</code></pre>
         <p>Cybersecurity certification covering security operations, threats, architecture, and risk management.</p>
         <span>Click to view certificate</span>
       </div>
-    </a>
+    </div>
 
-    <a class="cert-card" href="images/ejpt.png" target="_blank">
+    <div class="cert-card">
       <div class="cert-logo">
-        <img src="images/ejpt.png" alt="eJPT Certificate">
+        <img src="images/ejpt.png"
+             alt="eJPT Certificate"
+             onclick="openModal(this.src)">
       </div>
 
       <div class="cert-info">
@@ -93,7 +97,7 @@ Splunk, ELK, SIEM, Incident Response, Vulnerability Assessment</code></pre>
         <p>Junior penetration tester certification Assessment Methodologies, Host & Networking Penetration Testing, Host & Networking Auditing.</p>
         <span>Click to view certificate</span>
       </div>
-    </a>
+    </div>
 
     <div class="cert-card">
       <div class="cert-logo">
@@ -109,7 +113,7 @@ Splunk, ELK, SIEM, Incident Response, Vulnerability Assessment</code></pre>
 
   </div>
 </section>
-
+    
     <section id="projects" class="section">
       <h2 class="section-title">Projects</h2>
       <div class="grid">
@@ -173,5 +177,22 @@ Splunk, ELK, SIEM, Incident Response, Vulnerability Assessment</code></pre>
   </footer>
 
   <script src="script.js"></script>
+
+  <div id="certModal" class="modal" onclick="closeModal()">
+    <img id="modalImg" class="modal-content">
+</div>
+
+<script>
+function openModal(src) {
+    document.getElementById("certModal").style.display = "flex";
+    document.getElementById("modalImg").src = src;
+}
+
+function closeModal() {
+    document.getElementById("certModal").style.display = "none";
+}
+</script>
+  
 </body>
 </html>
+
