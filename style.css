@@ -259,6 +259,98 @@ footer {
   border-top: 1px solid var(--border);
 }
 
+/* Certifications */
+.cert-grid {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 24px;
+}
+
+.cert-card {
+  display: grid;
+  grid-template-columns: 220px 1fr;
+  background: rgba(255, 255, 255, 0.04);
+  border: 1px solid var(--border);
+  border-radius: 22px;
+  overflow: hidden;
+  transition: 0.25s;
+  cursor: pointer;
+}
+
+.cert-card:hover {
+  transform: translateY(-4px);
+  border-color: var(--accent);
+}
+
+.cert-logo {
+  background: rgba(255, 255, 255, 0.06);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 24px;
+  min-height: 190px;
+}
+
+.cert-logo img {
+  max-width: 140px;
+  max-height: 140px;
+  object-fit: contain;
+}
+
+.cert-info {
+  padding: 28px;
+}
+
+.cert-info h3 {
+  font-size: 1.5rem;
+  margin-bottom: 10px;
+}
+
+.cert-info p {
+  color: var(--muted);
+  margin-bottom: 12px;
+}
+
+.cert-info span {
+  color: var(--accent);
+  font-weight: bold;
+}
+
+.cert-placeholder {
+  color: var(--accent);
+  font-weight: bold;
+  font-size: 1.4rem;
+}
+
+/* Certificate Modal */
+.cert-modal {
+  display: none;
+  position: fixed;
+  z-index: 9999;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.9);
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+}
+
+.cert-modal img {
+  max-width: 92%;
+  max-height: 88vh;
+  border-radius: 12px;
+}
+
+.cert-close {
+  position: fixed;
+  top: 18px;
+  right: 28px;
+  color: white;
+  font-size: 42px;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+/* Responsive */
 @media (max-width: 900px) {
   .hero,
   .grid {
@@ -281,33 +373,12 @@ footer {
   }
 }
 
-.cert-card[data-img] {
-  cursor: pointer;
-}
+@media (max-width: 700px) {
+  .cert-card {
+    grid-template-columns: 1fr;
+  }
 
-.cert-modal {
-  display: none;
-  position: fixed;
-  z-index: 9999;
-  inset: 0;
-  background: rgba(0, 0, 0, 0.9);
-  justify-content: center;
-  align-items: center;
-  padding: 20px;
-}
-
-.cert-modal img {
-  max-width: 95%;
-  max-height: 90vh;
-  border-radius: 12px;
-}
-
-.cert-close {
-  position: fixed;
-  top: 18px;
-  right: 28px;
-  color: white;
-  font-size: 42px;
-  font-weight: bold;
-  cursor: pointer;
+  .cert-logo {
+    min-height: 160px;
+  }
 }
