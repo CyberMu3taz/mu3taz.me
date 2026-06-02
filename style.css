@@ -365,3 +365,8 @@ footer {
     max-height: 90%;
     border-radius: 10px;
 }
+.cert-click {
+  cursor: pointer;
+  -webkit-tap-highlight-color: transparent;
+  touch-action: manipulation;
+}
