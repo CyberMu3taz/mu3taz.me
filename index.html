@@ -66,23 +66,15 @@ Splunk, ELK, SIEM, Incident Response, Vulnerability Assessment</code></pre>
       </div>
     </section>
 
-  <section id="certifications" class="section">
+    <section id="certifications" class="section">
   <h2 class="section-title">Certifications</h2>
 
   <div class="cert-grid">
 
-    <div class="cert-card">
+    <div class="cert-card" data-img="images/security-plus.png">
       <div class="cert-logo">
-      <img src="images/security-plus.png"
-     alt="CompTIA Security+ Certificate"
-     class="cert-click"
-     role="button"
-     tabindex="0"
-     ontouchstart="openModal(this.src)"
-     onclick="openModal(this.src)">
-        
+        <img src="images/security-plus.png" alt="CompTIA Security+ Certificate">
       </div>
-
       <div class="cert-info">
         <h3>CompTIA Security+</h3>
         <p>Cybersecurity certification covering security operations, threats, architecture, and risk management.</p>
@@ -90,18 +82,10 @@ Splunk, ELK, SIEM, Incident Response, Vulnerability Assessment</code></pre>
       </div>
     </div>
 
-    <div class="cert-card">
+    <div class="cert-card" data-img="images/ejpt.png">
       <div class="cert-logo">
-    <img src="images/ejpt.png"
-     alt="eJPT Certificate"
-     class="cert-click"
-     role="button"
-     tabindex="0"
-     ontouchstart="openModal(this.src)"
-     onclick="openModal(this.src)">
-        
+        <img src="images/ejpt.png" alt="eJPT Certificate">
       </div>
-
       <div class="cert-info">
         <h3>eJPT</h3>
         <p>Junior penetration tester certification Assessment Methodologies, Host & Networking Penetration Testing, Host & Networking Auditing.</p>
@@ -113,7 +97,6 @@ Splunk, ELK, SIEM, Incident Response, Vulnerability Assessment</code></pre>
       <div class="cert-logo">
         <span class="cert-placeholder">CySA+</span>
       </div>
-
       <div class="cert-info">
         <h3>CompTIA CySA+</h3>
         <p>Security analytics and threat detection certification.</p>
@@ -123,7 +106,6 @@ Splunk, ELK, SIEM, Incident Response, Vulnerability Assessment</code></pre>
 
   </div>
 </section>
-    
     <section id="projects" class="section">
       <h2 class="section-title">Projects</h2>
       <div class="grid">
@@ -188,25 +170,10 @@ Splunk, ELK, SIEM, Incident Response, Vulnerability Assessment</code></pre>
 
   <script src="script.js"></script>
 
-<script>
-function openModal(src) {
-  const modal = document.getElementById("certModal");
-  const img = document.getElementById("modalImg");
-
-  img.src = src;
-  modal.style.display = "flex";
-  document.body.style.overflow = "hidden";
-}
-
-function closeModal() {
-  document.getElementById("certModal").style.display = "none";
-  document.body.style.overflow = "auto";
-}
-
-document.getElementById("modalImg").addEventListener("click", function(event) {
-  event.stopPropagation();
-});
-</script>
+  <div id="certModal" class="cert-modal">
+  <span id="closeModal" class="cert-close">&times;</span>
+  <img id="modalImg" src="" alt="Certificate Preview">
+</div>
   
 </body>
 </html>
