@@ -49,15 +49,16 @@ a {
 .logo {
   display: flex;
   align-items: center;
-  gap: 12px;
+  gap: 10px;
   font-weight: 800;
   color: var(--accent);
 }
 
 .logo img {
-  width: 42px;
-  height: 42px;
+  width: 120px;
+  height: auto;
   object-fit: contain;
+  display: block;
 }
 
 nav {
